@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 3000;
-const userRouter = require("./usersRouter");
+const userRouter = require("./routes/usersRouter");
 
 app.use(express.static("public"));
 app.use("/users", userRouter);
